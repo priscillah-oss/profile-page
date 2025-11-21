@@ -99,4 +99,21 @@ button:hover {
     flex: 1;
     text-align: center;
  }
+
+ /* Mobile styles */
+ @media (max-width: 600px) {
+    .flex-direction {
+        flex-direction: column;
+    }
  
+
+ .box{
+    margin-bottom: 20px;
+ }
+
+ .navbar {
+    flex-direction: column;
+    gap: 10px;
+ }
+
+}
