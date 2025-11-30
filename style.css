@@ -179,3 +179,61 @@ button:hover {
     margin: 10px 0;
     border-radius: 6px;
  }
+ /* Projects section */
+.projects {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card .tags span {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ffffff;
+  background: #007acc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: #005fa3;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
